@@ -1,0 +1,97 @@
+[
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Deal-custom_project_name",
+    "dt": "CRM Deal",
+    "fieldtype": "Data",
+    "label": "Project Name",
+    "fieldname": "custom_project_name",
+    "insert_after": "custom_business_unit",
+    "fetch_from": "custom_project.project_name",
+    "translatable": 1
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Deal-custom_project",
+    "dt": "CRM Deal",
+    "fieldtype": "Link",
+    "label": "Project",
+    "fieldname": "custom_project",
+    "insert_after": "next_step",
+    "options": "Project",
+    "reqd": 1
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Deal-custom_customer_in_erpnext",
+    "dt": "CRM Deal",
+    "fieldtype": "Data",
+    "label": "Customer in ERPNext",
+    "fieldname": "custom_customer_in_erpnext",
+    "insert_after": "lead_name",
+    "is_system_generated": 1
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Deal-custom_business_unit",
+    "dt": "CRM Deal",
+    "fieldtype": "Link",
+    "label": "Business Unit",
+    "fieldname": "custom_business_unit",
+    "insert_after": "custom_market_segment",
+    "options": "Business Unit",
+    "fetch_from": "lead.custom_business_unit",
+    "reqd": 1
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Deal-custom_market_segment",
+    "dt": "CRM Deal",
+    "fieldtype": "Link",
+    "label": "Market Segment",
+    "fieldname": "custom_market_segment",
+    "insert_after": "custom_project",
+    "options": "Market Segment"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Lead-custom_market_segment",
+    "dt": "CRM Lead",
+    "fieldtype": "Link",
+    "label": "Market Segment",
+    "fieldname": "custom_market_segment",
+    "insert_after": "custom_project",
+    "options": "Market Segment"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Lead-custom_project",
+    "dt": "CRM Lead",
+    "fieldtype": "Link",
+    "label": "Project",
+    "fieldname": "custom_project",
+    "insert_after": "custom_project_name",
+    "options": "Project"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Lead-custom_project_name",
+    "dt": "CRM Lead",
+    "fieldtype": "Data",
+    "label": "Project Name",
+    "fieldname": "custom_project_name",
+    "insert_after": "custom_business_unit",
+    "fetch_from": "custom_project.project_name"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "CRM Lead-custom_business_unit",
+    "dt": "CRM Lead",
+    "fieldtype": "Link",
+    "label": "Business Unit",
+    "fieldname": "custom_business_unit",
+    "insert_after": "custom_market_segment",
+    "options": "Business Unit",
+    "reqd": 1
+  }
+]

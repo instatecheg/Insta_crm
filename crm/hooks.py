@@ -62,7 +62,28 @@ doctype_js = {
 
 # Home Pages
 # ----------
-
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "CRM Deal-custom_project_name",
+                    "CRM Deal-custom_project",
+                    "CRM Deal-custom_customer_in_erpnext",
+                    "CRM Deal-custom_business_unit",
+                    "CRM Deal-custom_market_segment",
+                    "CRM Lead-custom_market_segment",
+                    "CRM Lead-custom_project",
+                    "CRM Lead-custom_project_name",
+                    "CRM Lead-custom_business_unit",
+                ],
+            ]
+        ],
+    }
+]
 # application home page (will override Website Settings)
 # home_page = "login"
 
