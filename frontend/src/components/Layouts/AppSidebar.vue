@@ -259,6 +259,11 @@ const links = [
     condition: () => !props.mobile,
   },
   {
+    label: 'Deal to SO Conversion',
+    icon: LucideLayoutDashboard,
+    to: 'Deal to SO Conversion',
+  },
+  {
     label: 'Leads',
     icon: LeadsIcon,
     to: 'Leads',

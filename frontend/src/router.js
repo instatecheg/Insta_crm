@@ -144,6 +144,17 @@ const routes = [
     name: 'Not Permitted',
     component: () => import('@/pages/NotPermitted.vue'),
   },
+  {
+  path: '/deal-to-so-conversion',
+  name: 'Deal to SO Conversion',
+  beforeEnter() {
+    window.open(
+      'https://erp.powerlineautomation.com/app/dashboard-view/Deal%20to%20SO%20Conversion',
+      '_blank'
+    )
+    return false
+  },
+},
 ]
 
 const handleMobileView = (componentName) => {
